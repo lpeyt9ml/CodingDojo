@@ -37,3 +37,5 @@ print secondHalf
 
 secondHalf.insert(0, firstHalf) #Assigning this to variable and printing variable prints 'None' :S
 print secondHalf #[[-3, -2, 2, 6, 7], 10, 12, 19, 32, 54, 98]
+
+# Excellent! Keep it up!
