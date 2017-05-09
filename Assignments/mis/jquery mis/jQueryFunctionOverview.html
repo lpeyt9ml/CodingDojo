@@ -1,0 +1,155 @@
+$(document).ready(function() {
+         $('.appendbutton').click(function() {
+           $('.appendtext').append(' javascript library. ')
+         });
+         $(".attribute").click(function(){
+             $("img").attr("width", "400");
+         });
+      $(document).ready(function() {
+         $('.hidebutton').click(function() {
+           $('.hideshowtext').hide()
+         });
+         $('.showbutton').click(function() {
+           $('.hideshowtext').show()
+         });
+         $('.toggle').click(function() {
+             $('.toggle').toggle()
+         });
+         $('.slideToggle').click(function() {
+             $('.slideToggle').slideToggle()
+         });
+         $('.hidebutton').click(function() {
+           $('.hideshowtext').hide()
+         });
+         $('.showbutton').click(function() {
+           $('.hideshowtext').show()
+         });
+         $('.fadeInbutton').click(function() {
+           $('.fadetext').fadeIn()
+         });
+         $('.fadeOutbutton').click(function() {
+           $('.fadetext').fadeOut()
+         });
+         $('.slideUp').click(function() {
+           $('.slidedir').slideUp()
+            });
+         $('.slideDown').click(function() {
+           $('.slidedir').slideDown()
+           });
+           $('.addClass').click(function() {
+             $('.addremove').addClass('class')
+           });
+           $('.removeClass').click(function() {
+             $('.addremove').removeClass('class')
+           });
+            $('.before').click(function() {
+                 $('.beforeafter').before('<h5>before<\/h5>')
+             });
+             $('.after').click(function() {
+               $('.beforeafter').after('<h5>after<\/h5>')
+             });
+             $('.text').click(function() {
+               $('.settext').text('This is a new text.')
+             });
+             $('.html').click(function() {
+               $('.html').html(' <em>New message-overwrite previous content.<\/em> ')
+             });
+             $("#btn1").click(function(){
+                 $("div").data("greeting", "Hello World");
+             });
+           $("#btn2").click(function(){
+               alert($("div").data("greeting"));
+
+         });
+        });
+    });
+
+//]]>
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="section">
+    <h1 class="heading">JQuery</h1>
+
+    <p class="text appendtext"></p><button class="button appendbutton">append</button>
+  </div>
+
+  <div class="section">
+    <img src="dessin_bizarre.jpg" alt="musician" width="100" height="100" /><br />
+    <button class="button attribute">Attribute: Set width of image</button>
+  </div>
+
+  <div class="section">
+    <h1 class="heading">.toggle</h1>
+
+    <p class="text toggle">java toggle</p><button class="button toggle">toggle</button>
+  </div>
+
+  <div class="section">
+    <h1 class="heading">.slideToggle</h1>
+
+    <p class="text slideToggle">slideToggle</p><button class=
+    "button slideToggle">slideToggle</button>
+  </div>
+
+  <div class="section">
+    <h1 class="heading">.hide and .show</h1>
+
+    <p class="text hideshowtext">Now you see me...</p><button class=
+    "button hidebutton">hide</button> <button class="button showbutton">show</button>
+  </div>
+
+  <div class="section">
+    <h1 class="heading">.fadeIn and .fadeOut</h1>
+
+    <p class="text fadetext">fade</p>
+
+    <p><button class="button fadeInbutton">fadeIn</button> <button class=
+    "button fadeOutbutton">fadeOut</button></p>
+  </div>
+
+  <div class="section">
+    <h1 class="heading">.slideUp and .slideDown</h1>
+
+    <p class="text slidedir">This way up and down.</p><button class=
+    "button slideUp">slideUp<button><button class=
+    "button slideDown">slideDown</button></button></button>
+  </div>
+
+  <div class="section">
+    <h1 class="heading">.addClass and .removeClass</h1>
+
+    <p class="text addremove">add and remove.</p><button class=
+    "button addClass">addClass</button> <button class=
+    "button removeClass">removeClass</button>
+  </div>
+
+  <div class="section">
+    <h1 class="heading">.before and .after</h1>
+
+    <p class="text beforeafter">before and after</p><button class=
+    "button before">before</button> <button class="button after">after</button>
+  </div>
+
+  <div class="section">
+    <h1 class="heading">.text</h1>
+
+    <p class="text settext">Sets New Message.</p><button class=
+    "button text">text</button>
+  </div>
+
+  <div class="section">
+    <h1 class="heading">.html</h1>
+
+    <p class="text html">html random text.</p><button class="button html">html</button>
+  </div>
+
+  <div class="section">
+    <button id="btn1">Attach data to div element</button><br />
+    <button id="btn2">Get data attached to div element</button>
+  </div>
+</div>
+</body>
+</html>

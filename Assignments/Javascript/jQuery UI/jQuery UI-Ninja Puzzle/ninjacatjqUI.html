@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery UI Sortable - Default functionality</title>
+        <link rel="stylesheet" type="text/css" href="ninjacatjqUI.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+        $( function() {
+          $( "#sortable" ).sortable();
+          $( "#sortable" ).disableSelection();
+        } );
+        </script>
+  </head>
+
+  <body>
+      <div id="wrapper">
+         <div id="sortable">
+             <img src='ninja0.png' alt='ninja0'/>
+             <img src='ninja1.png' alt='ninja1'/>
+             <img src='ninja2.png' alt='ninja2'/>
+             <img src='ninja3.png' alt='ninja3'/>
+             <img src='ninja4.png' alt='ninja4'/>
+        </div>
+      </div>
+  </body>
+ </html>

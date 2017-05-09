@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Blog</title>
+        <meta name="description" content="2017 releases from musicians in various genres">
+    </head>
+
+    <body>
+         <H1>2017 Music Releases</H1>
+         <a><img src="music%20symbol.jpg" alt="music symbol" /></a>
+
+        <h1>Musicians Among Various Genres</h1>
+
+
+        <p> Artists of various genres are found on many different platforms.
+            The releases for this year so far are found in the following genres
+            listed below.</p>
+
+        <div id="Genres">
+            <p>Genres</p>
+                <ul>
+                    <li>Ambient</li>
+                    <li>Electronic</li>
+                    <li>Classical</li>
+                    <li>World</li>
+                    <li>Metal</li>
+                    <li>Rhythm and Prose</li>
+                    <li>Songwriter</li>
+                </ul>
+        </div>
+
+        <p>Check out the newest releases from our favorite artists!</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Artist Name</th>
+                    <th>Genre</th>
+                    <th>New Release</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dessin Bizarre</td>
+                    <td>Electronic</td>
+                    <td>Value</td>
+                </tr>
+                <tr>
+                    <td>Sound Traveler</td>
+                    <td>World</td>
+                    <td>Afrobeat Remixes</td>
+                <tr>
+                    <td>Jobanshi</td>
+                    <td>Ambient</td>
+                    <td>Neutral Landscapes</td>
+               </tr>
+            </tbody>
+        </table>
+
+
+        <p>
+            Music from featured artists can be purchaed from different sites.
+            The most popular are listed below.
+
+        </p>
+        Top Places to Buy Music
+        <ol>
+            <li>ITUNES</li>
+            <li>Bandcamp</li>
+            <li>CDBaby</li>
+            <li>Amazon</li>
+        </ol>
+
+
+        <form action="process.php" method="post">
+
+          <H3>Choose Music Preferences</H3>
+
+        <p>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+        </p>
+
+        <p>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+        </p>
+
+       <p>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email">
+       </p>
+
+        <p>Choose Your Favorite Genre:</p>
+
+        <label for="ambient">Ambient</label>
+        <input type="checkbox" id="ambient" name="genre" value="ambient">
+
+        <label for="electronic">Electronic</label>
+        <input type="checkbox" id="electronic" name="genre" value="electronic">
+
+        <label for="classical">Classical</label>
+        <input type="checkbox" id="classical" name="genre" value="classical">
+
+        <label for="metal">Metal</label>
+        <input type="checkbox" id="metal" name="genre" value="metal">
+
+        <label for="songwriter">Songwriter</label>
+        <input type="checkbox" id="songwriter" name="genre" value="songwriter">
+
+
+        <p>Choose Favorite Place to Buy Music</p>
+        <input type="radio" id="Bandcamp" name="buymusic" value="Bandcamp">
+        <label for="Bandcamp">Bandcamp</label>
+
+        <input type="radio" id="ITUNES" name="buymusic" value="Spotify">
+        <label for="ITUNES">ITUNES</label>
+
+        <input type="radio" id="CDBaby" name="buymusic" value="CDBaby">
+        <label for="CDBaby">CDBaby</label>
+
+        <p>Favorite Place to Stream Music<select name="Stream Music"><option value="fav">Spotify</option>
+        </select></p>
+
+
+        <p><input type="submit" value="Submit"></p>
+
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,66 @@
+*{
+ margin: 0px;
+ padding: 0px;
+}
+
+#wrapper{
+ width: 800px;
+ height: 300px;
+ padding: 15px;
+ margin-left: 50px;
+ margin-top: 50px;
+ }
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+table th {
+  padding: 5px 45px 5px 5px;
+}
+
+h1 {
+    border-bottom: 2px solid #A9A9A9;
+    position: relative;
+    bottom: 200px;
+    left: 65px;
+    width: 26% /*this sets border length */
+}
+
+form {
+    position: relative;
+    bottom: 190px;
+    left: 128px;
+    font-family: Arial;
+    margin-top: 20px;
+}
+
+label[for=firstname]
+{
+   display:inline-block;
+   width:110px;
+   
+}
+label[for=lastname]
+{
+   display:inline-block;
+   width:110px;
+}
+label[for=email]
+{
+   display: inline-block;
+   width:110px;
+}
+label[for=contact]
+{
+   display:inline-block;
+   width:110px;
+}
+
+.button {
+    padding: 6px;
+    position: relative;
+    left:30px;
+    top: 30px;
+    left: 215px;
+}

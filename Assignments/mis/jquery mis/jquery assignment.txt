@@ -1,0 +1,21 @@
+DONE:
+click
+toggle
+slideToggle
+.hide
+.show
+append
+fadeOut
+fadeIn
+.slideDown
+.slideUp
+.addClass
+remove class
+
+.before
+after
+.text
+HTML
+.attr
+....................................
+

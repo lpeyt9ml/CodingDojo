@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="jQueryUsers.css">
+        <meta charset="UTF-8">
+        <title>JQuery Form</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+      $('form').submit(function() { //this is explicit and better than 'click', but for this to work must have 'type=submit' in input, button not mandatory
+        //assigning values from html fields to variables
+        var fname = $('#firstname').val();
+        var lname = $('#lastname').val();
+        var email = $('#email').val();
+        var contact = $('#contact').val();
+        //appending data from variables to table with concatenation
+        $('tbody').append('<tr><td>' + fname + '</td><td>' + lname + '</td><td>' + email + '</td><td>' + contact + '</td></tr>');
+        //^format is the way it is because we are not simply passing in static text, we are passing in variables with changing values
+        $('input[type=text]').val(''); //clearing input fields after passing in info
+        return false;
+      });
+    });
+    </script>
+
+    </head>
+  <body>
+
+            <div id="wrapper">
+                <div id="header">
+                    <table>
+                      <thead>
+                      <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email Address</th>
+                        <th>Contact #</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="title">
+                <h1>Add User</h1>
+            </div>
+
+            <div class="form">
+                <form class="form" action="" method="">
+
+                      <label for="firstname">First Name:</label>
+                      <input type="text" id="firstname" placeholder="First Name"><br>
+
+                      <label for="lastname">Last Name:</label>
+                      <input type="text" id="lastname" placeholder="Last Name"><br>
+
+                     <label for="email">Email:</label>
+                     <input type="text" id="email" placeholder="Email Address"><br>
+
+                    <label for="contact">Contact #</label>
+                    <input type="text" id="contact" placeholder="Phone #"><br>
+
+                    <input class="button" type="submit" value="Add User">
+             </form>
+          </div>
+
+
+  </body>
+</html>

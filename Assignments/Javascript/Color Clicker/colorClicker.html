@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Color Clickerr</title>
+    <link rel="stylesheet" type="text/css" href="colorClicker.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+
+            function random_color() {
+             var rgb = ['a','b','c','d','e','f','0','1','2','3','4','5','6','7','8','9'];
+             color = '#' //this is what we'll return! must 'append' to #
+             for(var i = 0; i < 6; i++) { //hexadecimal(6) color for loop, that's why conditional < 6
+                x = Math.trunc((Math.random()*16)) //16 is array rgb.length
+              color += rgb[x]; } //'appending' to color var's # above
+             return color;
+          }
+        $(document).ready(function(){
+          $('#largeBox').click(function(){
+            $(this).children().css("background-color", random_color()); //Can call functions from jQuery .css method!
+              $(this).css("background-color", random_color());
+          })
+          $('.middleBox').click(function(event){
+            event.stopPropagation();
+              $(this).parent().css("background-color", random_color()); //traversing
+          })
+          $('.sideBox').click(function(event){
+            event.stopPropagation();
+              $(this).siblings().css("background-color", random_color()); //traversing
+          })
+
+        });
+      </script>
+
+   </head>
+   <body>
+      <h1>ColorClicker! </h1>
+      <div id='largeBox'>
+          <div class='sideBox'></div>
+          <div class='middleBox'></div>
+          <div class='sideBox'></div>
+      </div>
+      <h2>Rules:</h2>
+      <h3>1. Clicking the big box should change background colors of both the small and large boxes!</h3>
+      <h3>2. Clicking the middle small box should change the color of the big box!</h3>
+      <h3>3. Clicking the left or right small box should change the color of that box's siblings</h3>
+   </body>
+</html>

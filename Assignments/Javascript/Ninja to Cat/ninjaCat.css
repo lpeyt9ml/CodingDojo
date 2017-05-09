@@ -1,0 +1,27 @@
+* {
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+
+
+#wrapper {
+  background-color: grey;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  width: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#images {
+	position:relative;
+	left: 150px;
+	display:inline-grid;
+}
+
+#images img {
+	padding-top: 10px;
+}

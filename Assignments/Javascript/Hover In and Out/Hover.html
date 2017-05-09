@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hover</title>
+    <link rel="stylesheet" type="text/css" href="Hover.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      //https://gaurangdabhi.wordpress.com/2014/02/13/change-image-source-on-mousehover-using-jquery/
+
+
+      $(function() {
+                $('img').bind('mouseenter mouseleave', function() {
+                $(this).attr({
+                    src: $(this).attr('data-other-src')
+                    , 'data-other-src': $(this).attr('src')
+                })
+              });
+           });
+         });
+
+    </script>
+  </head>
+  <body>
+      <div id="wrapper">
+          <div id="firstrowImages">
+                     <img data-other-src="sound_traveler-albumart.jpg"  src="sound-traveler.jpg" alt='sound-travler'/>
+                     <img data-other-src="affinity.jpg"  src="patel.jpg" alt='patel'/>
+                     <img data-other-src="yrAlbum.jpg"  src="yr.jpg" alt='yr'/>
+                     <img data-other-src="d.fitzgerald.jpg"  src="d.fitzgerald-photo.jpg" alt='drew'/>
+            </div>
+        </div>
+    </body>
+</html>

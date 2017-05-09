@@ -1,0 +1,97 @@
+
+/* Centering body to middle of page*/
+body {   padding-left: 500px;   padding-right: 500 px; }
+
+/* Font */
+H1, p {
+    font-family: "Arial";
+    font-weight: bold;
+}
+
+
+label[for=female]
+{
+  font-family: "Arial";
+  font-weight: bold;
+}
+
+label[for=male]
+{
+  font-family: "Arial";
+  font-weight: bold;
+}
+
+label[for=other]
+{
+  font-family: "Arial";
+  font-weight: bold;
+}
+
+/* Width of input boxes */
+input[type=text] {
+    padding: 5px 10px;
+    margin: 0px 0;
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: 2px;
+    width: 100px;
+}
+input[type=password] {
+    padding: 5px 10px;
+    margin: 0px 0;
+    box-sizing: border-box;
+    border-style: solid;
+    border-radius: 2px;
+    width: 100px;
+}
+
+
+
+
+/* Aligning input boxes*/
+
+label[for=email]
+{
+   display: inline-block;
+   width:110px;
+}
+label[for=password]
+{
+   display:inline-block;
+   width:110px;
+}
+label[for=first_name]
+{
+   display:inline-block;
+   width:110px;
+}
+label[for=last_name]
+{
+   display:inline-block;
+   width:110px;
+}
+
+label[for=date]
+{
+   display:inline-block;
+   width:110px;
+}
+
+/*add shadow to submit botton */
+input[type="submit"]
+{
+ border: solid;
+ background: none;
+ box-shadow:2px 2px black;
+ border-radius: 0px;
+}
+
+/*add shadow to dropdown selector*/
+select
+{
+ border: solid;
+ background: none;
+ box-shadow:none;
+ border-radius: 2px;
+
+}

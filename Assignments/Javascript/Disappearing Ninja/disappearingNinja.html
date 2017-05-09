@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" type="text/css" href="disappearingNinja.css" />
+        <meta charset="utf-8">
+        <title>Disappearing Ninja</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function() {
+
+
+            $('#image1').click(function() {
+              $(this).hide("");
+            });
+            $('#image2').click(function() {
+               $(this).hide("");
+            });
+            $('#image3').click(function() {
+             $(this).hide("");
+            });
+            $('#image4').click(function() {
+               $(this).hide("");
+            });
+            $('#image5').click(function() {
+              $(this).hide("");
+            });
+            $('#image6').click(function() {
+              $(this).hide("");
+            });
+            $('#image7').click(function() {
+              $(this).hide("");
+            });
+            $('#image8').click(function() {
+               $(this).hide("");
+            });
+
+             $('#button').click(function() {
+               $('#firstColumn').children().fadeIn("slow")
+              });
+
+            $('#button').click(function() {
+                 $('#secondColumn').children().fadeIn("slow")
+
+            $('#button').click(function() {
+               $('#thirdColumn').children().fadeIn("slow")
+
+
+            $('#button').click(function() {
+               $('#fourthColumn').children().fadeIn("slow")
+            });
+         });
+       });
+       });
+        </script>
+
+    </head>
+  <body>
+      <div id="wrapper">
+          <div id="images">
+
+              <div id="firstColumn">
+                    <div id="image1">
+                        <img src="dojocat.jpg" alt="dojo_cat">
+                    </div>
+                    <div id="image2">
+                        <img src="dojocat.jpg" alt="dojo_cat">
+                    </div>
+               </div>
+
+              <div id="secondColumn">
+                  <div id="image3">
+                      <img src="dojocat.jpg" alt="dojo_cat">
+                  </div>
+                  <div id="image4">
+                    <img src="dojocat.jpg" alt="dojo_cat">
+                  </div>
+              </div>
+
+
+              <div id="thirdColumn">
+                  <div id="image5">
+                     <img src="dojocat.jpg" alt="dojo_cat">
+                  </div>
+                  <div id="image6">
+                    <img src="dojocat.jpg" alt="dojo_cat">
+                  </div>
+              </div>
+
+              <div id="fourthColumn">
+                  <div id="image7">
+                      <img src="dojocat.jpg" alt="dojo_cat">
+                  </div>
+                  <div id="image8">
+                      <img src="dojocat.jpg" alt="dojo_cat">
+                  </div>
+
+
+                 <img id="button" alt="button" src="button_restore.png">
+
+              </div>
+
+
+          </div>
+      </div>
+  </body>
+</html>

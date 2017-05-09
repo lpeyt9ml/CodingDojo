@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Tabs functionality</title>
+      <link rel="stylesheet" type="text/css" href="accordian.css">
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/eggplant/jquery-ui.css
+         " rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+      <script>
+         $(function() {
+            $( "#tabs-1" ).tabs();
+         });
+
+         $( function() {
+        $( "#accordion" ).accordion();
+        } );
+
+        $( function() {
+      $( "#datepicker" ).datepicker();
+      } );
+
+      </script>
+
+   </head>
+
+   <body>
+       <div id="wrapper">
+              <div id = "tabs-1">
+                  <h1>Coding Dojo</h1>
+                 <ul>
+                    <li><a href = "#tabs-2">Algorithms</a></li>
+                    <li><a href = "#tabs-3">Coding Lab</a></li>
+                    <li><a href = "#tabs-4">Assignments</a></li>
+                 </ul>
+                 <div id = "tabs-2">
+                    <p>
+                       Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                       amet, consectetur, adipisci velit...
+                    </p>
+                 </div>
+                 <div id = "tabs-3">
+                    <p>
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                       nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                 </div>
+                 <div id = "tabs-4">
+                    <p>
+                       ed ut perspiciatis unde omnis iste natus error sit
+                       voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                       eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                       beatae vitae dicta sunt explicabo.
+                    </p>
+                    <p>
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                       nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                 </div>
+              </div>
+
+              <div id="accordion">
+                  <h3>Dashboard</h3>
+                  <div>
+                    <p>
+                    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                    </p>
+                  </div>
+                  <h3>Events</h3>
+                  <div>
+                    <p>
+                    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                    suscipit faucibus urna.
+                    </p>
+
+                    <p>Date: <input type="text" id="datepicker"></p>
+                  </div>
+                  <h3>Career Opportunities</h3>
+                  <div>
+                    <p>
+                    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                    </p>
+                    <ul>
+                      <li>List item one</li>
+                      <li>List item two</li>
+                      <li>List item three</li>
+                    </ul>
+               </div>
+          </div>
+     </div>
+   </body>
+</html>

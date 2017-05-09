@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Functions</title>
+  <meta name="description" content="jQuery Functions">
+  <meta name="author" content="Refayat Haque">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+    $('.hidebutton').click(function() {
+      $('.hideshowtext').hide()
+    });
+    $('.showbutton').click(function() {
+      $('.hideshowtext').show()
+    });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="block">
+      <h1 class="heading">.hide / .show</h1>
+      <p class="text hideshowtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button class="button hidebutton">hide</button>
+      <button class="button showbutton">show</button>
+    </div>
+
+</body>
+
+</html>
